@@ -18,9 +18,9 @@ districts and landmarks) from OpenStreetMap, through OSMnx, or from the user's o
 networks, buildings and barriers, and returns them as GeoDataFrames with scores and Lynch
 classes. It cleans street-network topology, builds dual graphs, partitions districts,
 extracts barriers and scores landmarks on their structural, visual, cultural and pragmatic
-salience. Optional features need extra packages: plotting (matplotlib, mapclassify),
+salience. `cityimage` installs every optional feature: plotting (matplotlib, mapclassify),
 interactive maps (folium), heights from rasters (rasterio, rasterstats) and parallel 3D
-sight lines (dask, psutil).
+sight lines (dask, psutil). `cityimage-base` is the core alone, as `pip install cityImage`.
 
 Current build status
 ====================
@@ -42,6 +42,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cityimage-green.svg)](https://anaconda.org/conda-forge/cityimage) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cityimage.svg)](https://anaconda.org/conda-forge/cityimage) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cityimage.svg)](https://anaconda.org/conda-forge/cityimage) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cityimage.svg)](https://anaconda.org/conda-forge/cityimage) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cityimage--base-green.svg)](https://anaconda.org/conda-forge/cityimage-base) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cityimage-base.svg)](https://anaconda.org/conda-forge/cityimage-base) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cityimage-base.svg)](https://anaconda.org/conda-forge/cityimage-base) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cityimage-base.svg)](https://anaconda.org/conda-forge/cityimage-base) |
 
 Installing cityimage
 ====================
@@ -60,7 +61,7 @@ How to use
 <summary>With conda</summary>
 
 ```
-conda install cityimage
+conda install cityimage cityimage-base
 ```
 
 </details>
@@ -69,7 +70,7 @@ conda install cityimage
 <summary>With mamba</summary>
 
 ```
-mamba install cityimage
+mamba install cityimage cityimage-base
 ```
 
 </details>
@@ -79,9 +80,9 @@ mamba install cityimage
 
 ```
 # for adding to your local project
-pixi add cityimage
+pixi add cityimage cityimage-base
 # for installing globally
-pixi global install cityimage
+pixi global install cityimage cityimage-base
 ```
 
 </details>
